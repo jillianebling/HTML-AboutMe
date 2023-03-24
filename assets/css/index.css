@@ -1,0 +1,139 @@
+a:link {
+	color: #4A4844;
+}
+
+a:visited {
+	color: #393E46;
+}
+
+a:hover {
+	color: dimgrey;
+}
+
+a:active {
+	color: grey;
+}
+
+@font-face{
+    font-family: Forum;
+    src: url("/assets/fonts/Forum-Regular.ttf");
+}
+
+@font-face{
+    font-family: Jaques;
+    src: url("/assets/fonts/JacquesFrancois-Regular.ttf")
+}
+
+.wrapper{
+    display: grid;
+    grid-template:"Head Head Head" 
+                  "Nav Nav Nav" 
+                  "Overview About About"
+                  "Overview About About";
+}
+
+body{
+    margin: 0px;
+    font-family: Forum;
+}
+
+header{
+    grid-area: Head;
+
+    text-align: center;
+    background-color: #393E46;
+    height: 100%;
+    width: 100vw;
+    padding-bottom: 2.1vw;
+}
+
+h1,h3{
+    color: #F0E9D2;
+    margin: 0px;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+.overview h2{
+
+    padding-bottom: 5%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav{
+    grid-area: Nav;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    background-color: #6D8B74;
+    
+    font-size: 28px;
+    font-family: Jaques;
+    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+.nav li{
+    display: inline;
+    padding: 87.8px;   
+}
+
+.overview{
+    grid-area: Overview;
+    background-color: #A69D92;
+    color: #4A4844;
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+
+    width: 15vw;
+    height: 125.2%;
+    
+}
+
+.overview li{
+    text-align: center;
+    margin-left: -30px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.abtme{
+    grid-area: About;
+    background-color: #D0C9C0;
+    text-align: center;
+    height: vw;
+    padding-top: 2%;
+    
+    color: #4A4844;
+    
+    height: 120%;
+    
+}
+
+.abtme p{
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+}
+
+.abtme img{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}

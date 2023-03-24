@@ -1,0 +1,112 @@
+a:link {
+	color: #4A4844;
+}
+
+a:visited {
+	color: #393E46;
+}
+
+a:hover {
+	color: dimgrey;
+}
+
+a:active {
+	color: grey;
+}
+
+@font-face{
+    font-family: Forum;
+    src: url("/assets/fonts/Forum-Regular.ttf");
+}
+
+@font-face{
+    font-family: Jaques;
+    src: url("/assets/fonts/JacquesFrancois-Regular.ttf")
+}
+
+.wrapper{
+    display: grid;
+    grid-template:"Head Head Head" 
+                  "Nav Nav Nav" 
+                  "Canon Film Polar"
+                  "Canon Film Polar";
+}
+
+body{
+    margin: 0px;
+    font-family: Forum;
+}
+
+header{
+    grid-area: Head;
+
+    text-align: center;
+    background-color: #393E46;
+    height: 100%;
+    width: 100vw;
+    padding-bottom: 2.1vw;
+}
+
+h1,h3{
+    color: #F0E9D2;
+    margin: 0px;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+h4,h5{
+    text-align: center;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav{
+    grid-area: Nav;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    background-color: #6D8B74;
+    
+    font-size: 28px;
+    font-family: Jaques;
+    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+.nav li{
+    display: inline;
+    padding: 87.8px;   
+}
+
+.canon{
+    grid-area: Canon;
+    
+    background-color: #D0C9C0;
+    color: #4A4844;
+    text-align: center;
+}
+
+.film{
+    grid-area: Film;
+    
+    background-color: #D0C9C0;
+    color: #4A4844;
+    text-align: center;
+    
+}
+.polaroid{
+    grid-area: Polar;
+    
+    background-color: #D0C9C0;
+    color: #4A4844;
+    text-align: center;
+}

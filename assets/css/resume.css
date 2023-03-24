@@ -1,0 +1,124 @@
+a:link {
+	color: #4A4844;
+}
+
+a:visited {
+	color: #393E46;
+}
+
+a:hover {
+	color: dimgrey;
+}
+
+a:active {
+	color: grey;
+}
+
+@font-face{
+    font-family: Forum;
+    src: url("/assets/fonts/Forum-Regular.ttf");
+}
+
+@font-face{
+    font-family: Jaques;
+    src: url("/assets/fonts/JacquesFrancois-Regular.ttf")
+}
+
+.nav{
+    grid-area: Nav;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    background-color: #6D8B74;
+    
+    font-size: 28px;
+    font-family: Jaques;
+    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+.nav li{
+    display: inline;
+    padding: 87.8px;   
+    list-style: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template:"Head Head" 
+                  "Nav Nav" 
+                  "Cont Exp";   
+}
+
+body{
+    margin: 0px;
+    font-family: Forum;
+}
+
+header{
+    grid-area: Head;
+
+    text-align: center;
+    background-color: #393E46;
+    height: 100%;
+    width: 100vw;
+    padding-bottom: 2.1vw;
+}
+
+h1,h3{
+    color: #F0E9D2;
+    margin: 0px;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.contskillsedu{
+    grid-area: Cont;
+    
+    background-color: #D0C9C0;
+    color: #4A4844;
+    
+    padding-left: 25%;
+    padding-top: 3%;
+    
+    height: 110%;
+}
+
+.exp{
+    grid-area: Exp;
+    
+    background-color: #D0C9C0;
+    color: #4A4844;
+    
+    padding-right: 10%;
+    padding-left:15%;
+    padding-top: 3%;
+    
+     height: 108.1%;
+}
+
+ul{
+    list-style: none;
+}
+
+.sublist{
+    list-style: circle;
+}
+
+.contskillsedu, .exp{
+    font-size: 18px;
+}
+
+.download{
+    padding-top: 3vw;
+}
